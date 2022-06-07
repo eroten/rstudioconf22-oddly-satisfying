@@ -1,0 +1,55 @@
+---
+title: Outline
+date: '`r Sys.Date()`'
+output: github_document
+---
+
+By finding an aspect of the project you can be proud of, you can enjoy working on something you don't care about and set up the project for future success. 
+
+Find your ___?  
+- pride point   
+- champion  
+- passion project  
+
+In three steps.
+
+1. Project intake
+1. Do the thing, but better
+1. Post-mortem
+
+
+
+## Steps
+
+### Intake: Find *your* thing
+
+- Review existing materials
+- How to find your Thing
+    - List the things you could do better
+    - Make it a learning opportunity
+- Replicate with your chosen methods. 
+    - Are there maps? Make the maps. Are there plots? Make the plots. 
+    - If you cannot replicate it, why? 
+
+### Action: Do the thing, but better
+
+- document all the things
+    - use in-line code comments
+    - write long-form narratives describing processes
+- focus on reproducibility
+- Pay attention not only to the *how*, but the *why*
+    - How: We used data from the DOT to estimate truck volume.
+    - Why: DOT data is the industry standard, freely available, and reliable.
+- Take breaks and celebrate the small wins along the way. 
+- Use version control and a git GUI to manage your workflow and track changes over time. 
+
+### Conclude: Post-mortem report  
+
+- Make sure the project is actually dead. Don't rush to get a death certificate.
+- Gather and synthesize communications and significant decisions. Again, focus on the *why*
+- Write your love letter
+    - What does the next person who touches this project need to know?
+    - Use sassy footnotes and emoji (within reason)
+    - Share opinions and suggestions for improvement.  
+
+
