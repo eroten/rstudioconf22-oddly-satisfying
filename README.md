@@ -36,6 +36,8 @@ A *crisp* 20 minutes.
     -   Practice first thing in the morning, just before bed.
     -   Exercise, go to bed early, no sweets the morning of!
 
+Contact person - Kim Goldsmith!!!
+
 # Presentation
 
 Current plan is to use xaringan, but this might get difficult due to
@@ -65,10 +67,11 @@ This could potentially be remedied by modularization and clever
 ## ├── <span style='color: #0000BB; font-weight: bold;'>README_files</span>
 ## ├── <span style='color: #0000BB; font-weight: bold;'>css</span>
 ## ├── <span style='color: #0000BB; font-weight: bold;'>fig</span>
+## ├── <span style='color: #00BB00;'>outline.Rmd</span>
+## ├── outline.md
 ## ├── rstudioconf22-inheritance.Rproj
 ## ├── <span style='color: #00BB00;'>slides-reference.Rmd</span>
 ## ├── <span style='color: #00BB00;'>slides.Rmd</span>
 ## ├── slides.html
-## ├── <span style='color: #0000BB; font-weight: bold;'>slides_files</span>
-## └── xaringan-themer.css
+## └── <span style='color: #0000BB; font-weight: bold;'>slides_files</span>
 </CODE></PRE>

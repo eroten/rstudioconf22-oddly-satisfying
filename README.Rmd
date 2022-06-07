@@ -40,6 +40,8 @@ A _crisp_ 20 minutes.
     - Practice first thing in the morning, just before bed. 
     - Exercise, go to bed early, no sweets the morning of!
 
+Contact person - Kim Goldsmith!!!
+
 # Presentation  
 
 Current plan is to use xaringan, but this might get difficult due to challenges with HTML styling. Backup is MS PowerPoint.  
