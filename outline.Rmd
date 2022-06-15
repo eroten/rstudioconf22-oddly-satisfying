@@ -4,6 +4,10 @@ date: '`r Sys.Date()`'
 output: github_document
 ---
 
+## Hook
+## Villain
+## 
+
 By finding an aspect of the project you can be proud of, you can enjoy working on something you don't care about and set up the project for future success. 
 
 Find your ___?  
@@ -11,12 +15,9 @@ Find your ___?
 - champion  
 - passion project  
 
-In three steps.
-
-1. Project intake
-1. Do the thing, but better
-1. Post-mortem
-
+1. Intake
+1. Do and document
+1. Post-project 
 
 
 ## Steps
@@ -30,8 +31,9 @@ In three steps.
 - Replicate with your chosen methods. 
     - Are there maps? Make the maps. Are there plots? Make the plots. 
     - If you cannot replicate it, why? 
+- "Documenatation is a love letter to your future self" - Damien Conway
 
-### Action: Do the thing, but better
+### Action: Do and document
 
 - document all the things
     - use in-line code comments
@@ -43,7 +45,7 @@ In three steps.
 - Take breaks and celebrate the small wins along the way. 
 - Use version control and a git GUI to manage your workflow and track changes over time. 
 
-### Conclude: Post-mortem report  
+### Post-project debrief  
 
 - Make sure the project is actually dead. Don't rush to get a death certificate.
 - Gather and synthesize communications and significant decisions. Again, focus on the *why*
