@@ -1,0 +1,113 @@
+---
+title: Supporting materials
+date: '`r Sys.Date()`'
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE
+)
+options(crayon.enabled = TRUE)
+old_hooks <- fansi::set_knit_hooks(knitr::knit_hooks,
+                                   which = c("output", "message", "error")
+)
+
+library(fs)
+remotes::install_github("EdwinTH/dutchmasters")
+library(dutchmasters)
+library(ggplot2)
+library(tibble)
+```
+
+
+## Color palette
+
+Colors based on [`{dutchmasters}`](https://github.com/EdwinTh/dutchmasters), semi.joan's [instagram](https://www.instagram.com/semi.joan/), and Blackbird Fabrics collection of [linen](https://www.blackbirdfabrics.com/en-us/collections/linen).  
+
+```{r palette-values}
+dutch_white <- dutchmasters$pearl_earring["white(colar)"]
+
+brick <- colorRampPalette(c(dutchmasters$pearl_earring["red(lips)"], dutch_white))
+
+midnight <- colorRampPalette(c("#5A6E73", dutch_white))
+
+clay <- colorRampPalette(c("#59302D", dutch_white))
+
+taupe <- colorRampPalette(c("#BFB3A4", dutch_white))
+
+acorn <- colorRampPalette(c("#BF895A", dutch_white))
+
+seaweed <- colorRampPalette(c("#262001", dutch_white)) 
+
+noil_black <- colorRampPalette(c("#0D0D0D", dutch_white))
+
+white <- colorRampPalette(c(dutch_white, "#FFFFFF"))
+
+palette_ramps <- 
+  tibble(
+    family = c(rep("brick", 50),
+               rep("midnight", 50),
+               rep("clay", 50),
+               rep("taupe", 50),
+               rep("acorn", 50),
+               rep("noil_black", 50),
+               rep("white", 50),
+               rep("seaweed", 50)),
+    level = c(rep(1:50, 8)),
+    code = c(brick(50),
+             midnight(50),
+             clay(50),
+             taupe(50),
+             acorn(50),
+             noil_black(50),
+             white(50),
+             seaweed(50))
+  ) %>% 
+  dplyr::arrange(-level)
+```
+
+```{r palette-display, dpi=300}
+ggplot(palette_ramps,
+       aes(x = level,
+           y = family,
+           color = code)) +
+  geom_point(size = 18.4,
+             shape = 15) +
+  scale_color_identity() +
+  scale_y_discrete(limits = rev) +
+  labs(title = "Color palette") +
+  theme_minimal() +
+  theme(axis.title = element_blank(),
+        axis.text.x = element_blank(),
+        panel.grid = element_blank(),
+        axis.text.y = element_text(hjust = 0))
+```
+
+## Satisfying gif candidates  
+
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/vc3yjx/sealing_a_gap_with_silicone/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/v4ue9y/this_transition_of_colour/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/uxtpz2/hay_this_is_pretty_satisfying/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/vctpqm/self_aligining_nails_how/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/v4mn16/log_splitting_the_water/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/uw2xah/the_making_of_pastry_art/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/u92s9k/new_warehouse_floor/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/qtqeys/cleaning_up_the_lines/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/taxpo9/i_work_in_a_steel_mill_and_we_were_rolling_one_of/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="446" width="640" scrolling="no"></iframe>
+
+<div style='position:relative; padding-bottom:calc(177.78% + 44px)'><iframe src='https://gfycat.com/ifr/FlawlessNiftyCatbird' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+
+
+
+<div style='position:relative; padding-bottom:calc(125.00% + 44px)'><iframe src='https://gfycat.com/ifr/NeedyGivingBufeo' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
