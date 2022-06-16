@@ -1,6 +1,12 @@
 Outline
 ================
-2022-06-07
+2022-06-16
+
+## Hook
+
+## Villain
+
+## 
 
 By finding an aspect of the project you can be proud of, you can enjoy
 working on something you don’t care about and set up the project for
@@ -11,11 +17,9 @@ Find your \_\_\_?
 - champion  
 - passion project
 
-In three steps.
-
-1.  Project intake
-2.  Do the thing, but better
-3.  Post-mortem
+1.  Intake
+2.  Do and document
+3.  Post-project
 
 ## Steps
 
@@ -28,8 +32,10 @@ In three steps.
 -   Replicate with your chosen methods.
     -   Are there maps? Make the maps. Are there plots? Make the plots.
     -   If you cannot replicate it, why?
+-   “Documenatation is a love letter to your future self” - Damien
+    Conway
 
-### Action: Do the thing, but better
+### Action: Do and document
 
 -   document all the things
     -   use in-line code comments
@@ -43,7 +49,7 @@ In three steps.
 -   Use version control and a git GUI to manage your workflow and track
     changes over time.
 
-### Conclude: Post-mortem report
+### Post-project debrief
 
 -   Make sure the project is actually dead. Don’t rush to get a death
     certificate.
