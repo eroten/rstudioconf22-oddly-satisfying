@@ -46,32 +46,41 @@ seaweed <- colorRampPalette(c("#262001", dutch_white))
 noil_black <- colorRampPalette(c("#0D0D0D", dutch_white))
 
 white <- colorRampPalette(c(dutch_white, "#FFFFFF"))
+```
 
-palette_ramps <- 
-  tibble(
-    family = c(rep("brick", 50),
-               rep("midnight", 50),
-               rep("clay", 50),
-               rep("taupe", 50),
-               rep("acorn", 50),
-               rep("noil_black", 50),
-               rep("white", 50),
-               rep("seaweed", 50)),
-    level = c(rep(1:50, 8)),
-    code = c(brick(50),
-             midnight(50),
-             clay(50),
-             taupe(50),
-             acorn(50),
-             noil_black(50),
-             white(50),
-             seaweed(50))
+
+```{r create_palette_ramp()}
+create_palette_ramp <- function(x = 50){
+  
+  tibble::tibble(
+    family = c(rep("brick", x),
+               rep("midnight", x),
+               rep("clay", x),
+               rep("taupe", x),
+               rep("acorn", x),
+               rep("noil_black", x),
+               rep("white", x),
+               rep("seaweed", x)),
+    level = c(rep(1:x, 8)),
+    code = c(brick(x),
+             midnight(x),
+             clay(x),
+             taupe(x),
+             acorn(x),
+             noil_black(x),
+             white(x),
+             seaweed(x))
   ) %>% 
-  dplyr::arrange(-level)
+    dplyr::arrange(-level)
+}
+
+palette_ramp50 <- create_palette_ramp()
+
+saveRDS(palette_ramp50, "data/palette.RDS")
 ```
 
 ```{r palette-display, dpi=300}
-ggplot(palette_ramps,
+ggplot(palette_ramp50,
        aes(x = level,
            y = family,
            color = code)) +
