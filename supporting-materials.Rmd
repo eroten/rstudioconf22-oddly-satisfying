@@ -15,10 +15,12 @@ old_hooks <- fansi::set_knit_hooks(knitr::knit_hooks,
 )
 
 library(fs)
-remotes::install_github("EdwinTH/dutchmasters")
+# remotes::install_github("EdwinTH/dutchmasters")
 library(dutchmasters)
 library(ggplot2)
 library(tibble)
+library(dplyr)
+library(patchwork)
 ```
 
 
@@ -29,7 +31,7 @@ Colors based on [`{dutchmasters}`](https://github.com/EdwinTh/dutchmasters), sem
 ```{r palette-values}
 dutch_white <- dutchmasters$pearl_earring["white(colar)"]
 
-brick <- colorRampPalette(c(dutchmasters$pearl_earring["red(lips)"], dutch_white))
+brick <- colorRampPalette(c("#A65746", dutch_white))
 
 midnight <- colorRampPalette(c("#5A6E73", dutch_white))
 
