@@ -96,6 +96,126 @@ ggplot(palette_ramp50,
         axis.text.y = element_text(hjust = 0))
 ```
 
+## Intro slide 
+
+Some generative aRt ideas?  
+
+### Gradients with dots
+
+```{r single-gradients, dpi=300}
+set.seed(24601)
+
+split_palette <- create_palette_ramp(200) %>% 
+  filter(family != "white") %>%
+  arrange(family, -level) %>% 
+  group_by(family) %>% 
+  group_split()
+
+
+purrr::map(split_palette,function(x){
+  p <- ggplot(x,
+              aes(x = family,
+                  y = level,
+                  color = code)) +
+    geom_jitter(
+      size = 38,
+      width = .55,
+      height = 0,
+      alpha = 0.90) +
+    scale_color_identity() +
+    # scale_y_discrete(limits = rev) +
+    coord_cartesian(clip = "off") +
+    theme_minimal() +
+    theme(axis.title = element_blank(),
+          axis.text.x = element_blank(),
+          panel.grid = element_blank(),
+          axis.text.y = element_blank(),
+          plot.background = element_rect(fill = dutch_white,
+                                         colour = NA))
+})
+
+```
+
+```{r bubble-bar-gradients, dpi=300}
+set.seed(24602)
+
+split_palette_bubble <- create_palette_ramp(200) %>% 
+  filter(family != "white") %>%
+  arrange(family, -level) %>% 
+  group_by(family) %>% 
+  group_split()
+
+
+purrr::map(split_palette_bubble, function(x){
+  max_level = max(x$level)
+  ggplot(x,
+         aes(x = family,
+             y = level,
+             color = code)) +
+    geom_jitter(
+      size = 20,
+      width = 0.5,
+      height = 0.2,
+      alpha = 0.5) +
+    scale_color_identity() +
+    # scale_y_discrete(limits = rev) +
+    coord_cartesian(clip = "off") +
+    geom_hline(yintercept = max_level * 0.55,
+               color = x$code[max_level * 0.45],
+               size = 8) +
+    geom_hline(yintercept = max_level * 0.5,
+               color = x$code[max_level * 0.5],
+               size = 10) +
+    
+    geom_hline(yintercept = max_level * 0.45,
+               color = x$code[max_level * 0.55],
+               size = 8) +
+    
+    theme_minimal() +
+    theme(axis.title = element_blank(),
+          axis.text.x = element_blank(),
+          panel.grid = element_blank(),
+          axis.text.y = element_blank(),
+          plot.background = element_rect(fill = x$code[max_level * 0.5],
+                                         colour = NA))
+})
+
+```
+
+
+```{r combined-gradient, dpi=300}
+set.seed(24601)
+
+select_pal <- create_palette_ramp(400) %>% 
+  filter(family %in% c("brick",
+                       "clay",
+                       "acorn"
+                       # "taupe"
+  )) %>% 
+  arrange(family, level)
+
+p <- ggplot(select_pal,
+            aes(y = family,
+                x = level,
+                color = code)) +
+  geom_jitter(
+    size = 38,
+    height = .45,
+    width = 0,
+    alpha = 0.90) +
+  scale_color_identity() +
+  scale_y_discrete(limits = rev) +
+  coord_cartesian(clip = "off") +
+  theme_minimal() +
+  theme(axis.title = element_blank(),
+        axis.text.x = element_blank(),
+        panel.grid = element_blank(),
+        axis.text.y = element_blank(),
+        plot.background = element_rect(fill = dutch_white,
+                                       colour = NA))
+
+p + (p + scale_x_reverse())
+```
 ## Satisfying gif candidates  
 
 
