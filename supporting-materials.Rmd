@@ -21,6 +21,7 @@ library(ggplot2)
 library(tibble)
 library(dplyr)
 library(patchwork)
+library(aRtsy)
 ```
 
 
@@ -216,10 +217,31 @@ p <- ggplot(select_pal,
 
 p + (p + scale_x_reverse())
 ```
+
+### Watercolor style abstracts  
+
+```{r watercolor-plot, dpi = 300}
+load(file = "data/seed_state.RData")
+wat <- canvas_watercolors(colors = c(acorn(1),
+                                     brick(1),
+                                     clay(1),
+                                     acorn(1),
+                                     brick(2),
+                                     clay(3)
+                                     ),
+                          background = dutch_white,
+                          layers = 20,
+                          resolution = 300,
+                          depth = 3)
+
+wat +
+  coord_cartesian(xlim = c(75,175),
+                  ylim = c(100,200))
+```
+
+
 ## Satisfying gif candidates  
 
-
-<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/vc3yjx/sealing_a_gap_with_silicone/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
 
 <iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/v4ue9y/this_transition_of_colour/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
 
