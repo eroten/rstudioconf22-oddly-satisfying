@@ -1,6 +1,6 @@
 Supporting materials
 ================
-2022-06-16
+2022-06-22
 
 ## Color palette
 
@@ -12,10 +12,88 @@ collection of
 
 ![](supporting-materials_files/figure-gfm/palette-display-1.png)<!-- -->
 
+## Intro slide
+
+Some generative aRt ideas?
+
+### Gradients with dots
+
+    ## [[1]]
+
+![](supporting-materials_files/figure-gfm/single-gradients-1.png)<!-- -->
+
+    ## 
+    ## [[2]]
+
+![](supporting-materials_files/figure-gfm/single-gradients-2.png)<!-- -->
+
+    ## 
+    ## [[3]]
+
+![](supporting-materials_files/figure-gfm/single-gradients-3.png)<!-- -->
+
+    ## 
+    ## [[4]]
+
+![](supporting-materials_files/figure-gfm/single-gradients-4.png)<!-- -->
+
+    ## 
+    ## [[5]]
+
+![](supporting-materials_files/figure-gfm/single-gradients-5.png)<!-- -->
+
+    ## 
+    ## [[6]]
+
+![](supporting-materials_files/figure-gfm/single-gradients-6.png)<!-- -->
+
+    ## 
+    ## [[7]]
+
+![](supporting-materials_files/figure-gfm/single-gradients-7.png)<!-- -->
+
+    ## [[1]]
+
+![](supporting-materials_files/figure-gfm/bubble-bar-gradients-1.png)<!-- -->
+
+    ## 
+    ## [[2]]
+
+![](supporting-materials_files/figure-gfm/bubble-bar-gradients-2.png)<!-- -->
+
+    ## 
+    ## [[3]]
+
+![](supporting-materials_files/figure-gfm/bubble-bar-gradients-3.png)<!-- -->
+
+    ## 
+    ## [[4]]
+
+![](supporting-materials_files/figure-gfm/bubble-bar-gradients-4.png)<!-- -->
+
+    ## 
+    ## [[5]]
+
+![](supporting-materials_files/figure-gfm/bubble-bar-gradients-5.png)<!-- -->
+
+    ## 
+    ## [[6]]
+
+![](supporting-materials_files/figure-gfm/bubble-bar-gradients-6.png)<!-- -->
+
+    ## 
+    ## [[7]]
+
+![](supporting-materials_files/figure-gfm/bubble-bar-gradients-7.png)<!-- -->
+
+![](supporting-materials_files/figure-gfm/combined-gradient-1.png)<!-- -->
+
+### Watercolor style abstracts
+
+![](supporting-materials_files/figure-gfm/watercolor-plot-1.png)<!-- -->
+
 ## Satisfying gif candidates
 
-<iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/vc3yjx/sealing_a_gap_with_silicone/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no">
-</iframe>
 <iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/v4ue9y/this_transition_of_colour/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no">
 </iframe>
 <iframe id="reddit-embed" src="https://www.redditmedia.com/r/oddlysatisfying/comments/uxtpz2/hay_this_is_pretty_satisfying/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no">

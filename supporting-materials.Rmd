@@ -7,7 +7,9 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  echo = FALSE
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
 )
 options(crayon.enabled = TRUE)
 old_hooks <- fansi::set_knit_hooks(knitr::knit_hooks,
@@ -227,16 +229,15 @@ wat <- canvas_watercolors(colors = c(acorn(1),
                                      clay(1),
                                      acorn(1),
                                      brick(2),
-                                     clay(3)
-                                     ),
+                                     clay(3)),
                           background = dutch_white,
                           layers = 20,
                           resolution = 300,
                           depth = 3)
 
 wat +
-  coord_cartesian(xlim = c(75,175),
-                  ylim = c(100,200))
+  coord_cartesian(ylim = c(100,200),
+                  xlim = c(75,175))
 ```
 
 
