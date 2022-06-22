@@ -1,5 +1,5 @@
 ---
-title: "r/OddlySatisfying"
+title: "Oddly Satisfying"
 subtitle: "Find delight in the mundane"  
 author: "Liz Roten"
 date: "July 27, 2022"
@@ -37,9 +37,10 @@ palette <- readRDS("data/palette.RDS")
 
 brick <- palette %>% filter(family == "brick", level == 1) 
 noil_black <- palette %>% filter(family == "noil_black", level == 1) 
-dutch_white <- palette %>% filter(family == "white", level == 30)
+dutch_white <- palette %>% filter(family == "white", level == 40)
 acorn <- palette %>% filter(family == "acorn", level == 1)
 midnight <- palette %>% filter(family == "midnight", level == 1)
+clay <- palette %>% filter(family == "clay", level == 1)
 seaweed <- palette %>% filter(family == "seaweed", level == 30)
 
 style_duo_accent(
