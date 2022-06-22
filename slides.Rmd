@@ -1,9 +1,8 @@
 ---
-title: "Presentation Ninja"
-subtitle: "&#x2694;&#xFE0F; xaringan +<br/>&#x1F60E; xaringanthemer"  
-author: 
-  - "Liz Roten"
-date: '`r Sys.Date()`'
+title: "r/OddlySatisfying"
+subtitle: "Find delight in the mundane"  
+author: "Liz Roten"
+date: "July 27, 2022"
 output:
   xaringan::moon_reader:
     css: css/xaringan-themer.css
