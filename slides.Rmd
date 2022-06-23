@@ -80,7 +80,7 @@ style_duo_accent(
       "margin" = "0"
     )
   ),
-  
+  title_slide_background_image = "../supporting-materials_files/figure-gfm/watercolor-plot-1.png",
   # etc.
   outfile = "css/xaringan-themer.css"
 )
