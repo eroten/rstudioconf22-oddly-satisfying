@@ -97,7 +97,7 @@ style_duo_accent(
 )
 
 
-xaringanExtra::use_xaringan_extra(c("tile_view", "banner"))
+xaringanExtra::use_xaringan_extra(c("tile_view", "banner", "animate"))
 ```
 ```{r xaringan-banner, echo=FALSE}
 xaringanExtra::use_banner(
@@ -106,6 +106,27 @@ xaringanExtra::use_banner(
                text_color = midnight$code))
 ```
 
+# There are 
+
+---
+class: animated fadeInUp fadeOutUp
+.pull-left[
+### From this...  
+```{r, out.width = "600px", echo=F}
+knitr::include_graphics("./fig/stitch_eyes.webp")
+```
+
+]
+---
+class: animated fadeInUp fadeOutUp
+.pull-right[
+### ...to this
+```{r, out.width = "380px", out.height="475px", echo=F}
+knitr::include_graphics("./fig/tart_icing.gif")
+```
+]
+
+---
 ## Typography
 
 Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
