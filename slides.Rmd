@@ -83,7 +83,13 @@ style_duo_accent(
 )
 
 
-xaringanExtra::use_tile_view()
+xaringanExtra::use_xaringan_extra(c("tile_view", "banner"))
+```
+```{r xaringan-banner, echo=FALSE}
+xaringanExtra::use_banner(
+  bottom_right = "lizroten.com/slides",
+  style_banner(font_size = "20pt",
+               text_color = midnight$code))
 ```
 
 ## Typography
