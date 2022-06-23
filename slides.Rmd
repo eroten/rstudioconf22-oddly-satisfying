@@ -76,7 +76,7 @@ style_duo_accent(
                           "font-weight" = 300
     ),
     ".date h3, .author h3" = list(
-      "font-size" = "32pt",
+      "font-size" = "30pt",
       "margin" = "0"
     )
   ),
@@ -157,6 +157,11 @@ class: inverse center middle
 class: inverse center middle
 
 # Do and document
+
+---
+`r emo::ji("love_letter")`
+
+> Documentation is a love letter to your future self.  - Damien Conway 
 
 ---
 class: inverse center middle
