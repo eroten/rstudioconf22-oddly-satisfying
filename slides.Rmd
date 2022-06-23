@@ -5,8 +5,10 @@ author: "Liz Roten"
 date: "July 27, 2022"
 output:
   xaringan::moon_reader:
-    chakra: libs/remark-latest.min.js
-    css: css/xaringan-themer.css
+    chakra: assets/libs/remark-latest.min.js
+    css: assets/css/xaringan-themer.css
+    includes:
+      in_header: assets/header.html
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -88,12 +90,13 @@ style_duo_accent(
       "width" = "50%"
     ),
     ".remark-slide-content.end-matter.hljs-github p" = list(
-      "font-size" = "12pt"
+      "font-size" = "10pt",
+      "line-height" = "1"
     )
   ),
-  title_slide_background_image = "../supporting-materials_files/figure-gfm/watercolor-plot-1.png",
+  title_slide_background_image = "../../supporting-materials_files/figure-gfm/watercolor-plot-1.png",
   # etc.
-  outfile = "css/xaringan-themer.css"
+  outfile = "assets/css/xaringan-themer.css"
 )
 
 
@@ -113,7 +116,7 @@ class: animated fadeInUp fadeOutUp
 .pull-left[
 ### From this...  
 ```{r, out.width = "600px", echo=F}
-knitr::include_graphics("./fig/stitch_eyes.webp")
+knitr::include_graphics("./assets/fig/stitch_eyes.webp")
 ```
 
 ]
@@ -122,7 +125,7 @@ class: animated fadeInUp fadeOutUp
 .pull-right[
 ### ...to this
 ```{r, out.width = "380px", out.height="475px", echo=F}
-knitr::include_graphics("./fig/tart_icing.gif")
+knitr::include_graphics("./assets/fig/tart_icing.gif")
 ```
 ]
 

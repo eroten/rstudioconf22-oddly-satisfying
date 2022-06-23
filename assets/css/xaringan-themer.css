@@ -142,6 +142,8 @@ a, a > code {
 }
 .title-slide {
   background-color: var(--title-slide-background-color);
+  background-image: url("../../supporting-materials_files/figure-gfm/watercolor-plot-1.png");
+  background-size: cover;
 }
 .title-slide .remark-slide-number {
   display: none;
@@ -307,6 +309,16 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   font-weight: 300;
 }
 .date h3, .author h3 {
-  font-size: 32pt;
+  font-size: 30pt;
   margin: 0;
+}
+.left-column {
+  width: 50%;
+}
+.right-column {
+  width: 50%;
+}
+.remark-slide-content.end-matter.hljs-github p {
+  font-size: 10pt;
+  line-height: 1;
 }
