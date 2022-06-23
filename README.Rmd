@@ -55,8 +55,9 @@ This could potentially be remedied by modularization and clever `results='asis'`
 # Repo structure  
 
 - `.\slides-reference.Rmd` is the standard xaringanthemer template. Will use for reference in `.\slides.Rmd`.  
-- `.\css\` contains all CSS data, including font files, colors, etc. 
-- `.\fig\` contains plots, screenshots, etc.  
+- `.\assets\` contain items called by `slides.Rmd`.
+    - `.\assets\css\` contains all CSS data, including font files, colors, etc. 
+    - `.\assets\fig\` contains plots, screenshots, gifs, etc.  
 
 
 ```{r}

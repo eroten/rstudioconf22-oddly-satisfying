@@ -57,27 +57,27 @@ This could potentially be remedied by modularization and clever
 
 -   `.\slides-reference.Rmd` is the standard xaringanthemer template.
     Will use for reference in `.\slides.Rmd`.  
--   `.\css\` contains all CSS data, including font files, colors, etc.
--   `.\fig\` contains plots, screenshots, etc.
+-   `.\assets\` contain items called by `slides.Rmd`.
+    -   `.\assets\css\` contains all CSS data, including font files,
+        colors, etc.
+    -   `.\assets\fig\` contains plots, screenshots, gifs, etc.
 
 <PRE class="fansi fansi-output"><CODE>## <span style='color: #0000BB; font-weight: bold;'>.</span>
 ## ├── CODEOWNERS
 ## ├── LICENSE.md
 ## ├── <span style='color: #00BB00;'>README.Rmd</span>
 ## ├── README.md
-## ├── <span style='color: #0000BB; font-weight: bold;'>css</span>
+## ├── <span style='color: #0000BB; font-weight: bold;'>assets</span>
 ## ├── <span style='color: #0000BB; font-weight: bold;'>data</span>
-## ├── <span style='color: #0000BB; font-weight: bold;'>fig</span>
-## ├── <span style='color: #0000BB; font-weight: bold;'>libs</span>
 ## ├── <span style='color: #00BB00;'>outline.Rmd</span>
 ## ├── outline.md
 ## ├── rstudioconf22-oddly-satisfying.Rproj
 ## ├── <span style='color: #00BB00;'>slides-reference.Rmd</span>
-## ├── <span style='color: #0000BB; font-weight: bold;'>slides-reference_files</span>
 ## ├── <span style='color: #00BB00;'>slides.Rmd</span>
 ## ├── slides.html
 ## ├── <span style='color: #0000BB; font-weight: bold;'>slides_files</span>
 ## ├── <span style='color: #00BB00;'>supporting-materials.Rmd</span>
 ## ├── supporting-materials.md
+## ├── <span style='color: #0000BB; font-weight: bold;'>supporting-materials_cache</span>
 ## └── <span style='color: #0000BB; font-weight: bold;'>supporting-materials_files</span>
 </CODE></PRE>
