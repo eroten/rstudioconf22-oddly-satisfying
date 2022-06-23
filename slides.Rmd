@@ -5,6 +5,7 @@ author: "Liz Roten"
 date: "July 27, 2022"
 output:
   xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
     css: css/xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
