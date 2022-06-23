@@ -39,7 +39,10 @@ library(dutchmasters)
 library(xaringanExtra)
 library(RefManageR)
 library(knitr)
-
+library(patchwork)
+library(aRtsy)
+library(tibble)
+library(fs)
 palette <- readRDS("data/palette.RDS")
 
 brick <- palette %>% filter(family == "brick", level == 1) 
@@ -226,14 +229,15 @@ class: center, middle
 ---
 class: end-matter
 
-#### R packages used
+#### Project packages
 ```{r pkg-refs, split=FALSE, echo=FALSE, warning=FALSE, message=FALSE, results='asis'}
-knitr::write_bib(c(.packages()), "packages.bib")
+knitr::write_bib(c(.packages()), "assets/packages.bib")
 BibOptions(check.entries = TRUE, 
            bib.style = "authoryear",
+           sorting = "nty",
            style = "markdown",
            dashed = TRUE)
-RefManageR::ReadBib("packages.bib")
+RefManageR::ReadBib("assets/packages.bib")
 ```
 
 ---
