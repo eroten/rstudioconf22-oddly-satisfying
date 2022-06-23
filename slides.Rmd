@@ -35,6 +35,8 @@ library(xaringanthemer)
 library(dplyr)
 library(dutchmasters)
 library(xaringanExtra)
+library(RefManageR)
+library(knitr)
 
 palette <- readRDS("data/palette.RDS")
 
@@ -78,6 +80,15 @@ style_duo_accent(
     ".date h3, .author h3" = list(
       "font-size" = "30pt",
       "margin" = "0"
+    ),
+    ".left-column" = list(
+      "width" = "50%"
+    ),
+    ".right-column" = list(
+      "width" = "50%"
+    ),
+    ".remark-slide-content.end-matter.hljs-github p" = list(
+      "font-size" = "12pt"
     )
   ),
   title_slide_background_image = "../supporting-materials_files/figure-gfm/watercolor-plot-1.png",
@@ -152,7 +163,20 @@ class: inverse center middle
 
 # Project Intake
 
+---
+# Assess the damage
 
+- Keep a list of all the things you dislike
+- Replicate findings/results
+- Find your thing
+
+---
+# What is your thing?
+
+find something about this project that you can go all-out. 
+
+Do you like maps? Make the best maps ever  
+Do you like plots? Make some gorgeous visualizations
 ---
 class: inverse center middle
 
@@ -169,11 +193,29 @@ class: inverse center middle
 # Post-project debrief
 
 ---
+# Leave a gift, not a mystery
+
+---
 class: center, middle
 
 # Thanks!
+---
+class: end-matter
 
-Slides created via the R packages:
+#### R packages used
+```{r pkg-refs, split=FALSE, echo=FALSE, warning=FALSE, message=FALSE, results='asis'}
+knitr::write_bib(c(.packages()), "packages.bib")
+BibOptions(check.entries = TRUE, 
+           bib.style = "authoryear",
+           style = "markdown",
+           dashed = TRUE)
+RefManageR::ReadBib("packages.bib")
+```
 
-[xaringan](https://github.com/yihui/xaringan)<br>
-[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+---
+class: end-matter
+#### Multimedia sources
+<ul style="font-size: 15pt; text-align: left;">
+
+- Stitch https://media.giphy.com/media/BbQrNk32kD064/giphy.gif 
+- Mini tart icing https://gfycat.com/needygivingbufeo, as performed by [@jeanimbert](https://www.instagram.com/jeanimbert/?hl=en) 
