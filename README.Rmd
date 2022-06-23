@@ -17,7 +17,7 @@ old_hooks <- fansi::set_knit_hooks(knitr::knit_hooks,
 library(fs)
 ```
 
-# Inheritance – upgrading a legacy project and making it your own  
+# Oddly Satisfying - Find delight in the mundane  
 
 <!-- badges: start -->
 <!-- badges: end -->
