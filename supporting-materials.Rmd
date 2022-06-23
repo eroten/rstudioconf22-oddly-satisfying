@@ -233,7 +233,7 @@ wat <- canvas_watercolors(colors = c(acorn(1),
                           background = dutch_white,
                           layers = 20,
                           resolution = 300,
-                          depth = 3)
+                          depth = 5)
 
 wat +
   coord_cartesian(ylim = c(100,200),
