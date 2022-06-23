@@ -14,12 +14,13 @@ output:
       ratio: 16:9
       countIncrementalSlides: true
 ---
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
   fig.showtext = TRUE,
-  fig.width=9, fig.height=3.5, fig.retina=3,
+  fig.width = 9, 
+  fig.height = 3.5, 
+  fig.retina = 3,
   out.width = "100%",
   cache = FALSE,
   echo = TRUE,
@@ -34,6 +35,7 @@ library(xaringanthemer)
 library(dplyr)
 library(dutchmasters)
 library(xaringanExtra)
+
 palette <- readRDS("data/palette.RDS")
 
 brick <- palette %>% filter(family == "brick", level == 1) 
@@ -42,7 +44,7 @@ dutch_white <- palette %>% filter(family == "white", level == 40)
 acorn <- palette %>% filter(family == "acorn", level == 1)
 midnight <- palette %>% filter(family == "midnight", level == 1)
 clay <- palette %>% filter(family == "clay", level == 1)
-seaweed <- palette %>% filter(family == "seaweed", level == 30)
+seaweed <- palette %>% filter(family == "seaweed", level == 25)
 
 style_duo_accent(
   # basic colors
