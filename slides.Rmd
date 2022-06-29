@@ -133,17 +133,17 @@ knitr::include_graphics("./assets/fig/tart_icing.gif")
 ---
 class: inverse center middle
 
-# Project Intake
+# Assess the damage
 
 ---
-# Assess the damage
+# Project Intake 
 
 - Keep a list of all the things you dislike
 - Replicate findings/results
 - Find your thing
 
 ---
-# What is your thing?
+# Find your thing
 
 find something about this project that you can go all-out. 
 
@@ -192,3 +192,26 @@ class: end-matter
 
 - Stitch https://media.giphy.com/media/BbQrNk32kD064/giphy.gif 
 - Mini tart icing https://gfycat.com/needygivingbufeo, as performed by [@jeanimbert](https://www.instagram.com/jeanimbert/?hl=en) 
+---
+
+other advice
+
+- general bits of good advice
+- specific way that I saw this in this problem
+- I got this problem that was easy, but it wasn't -> good hook
+- The truck becomes a plot device that can drive the story along
+    - (maybe this big truck image that follows through)
+    - most people won't be interested in the truck, 
+- "I still don't care about trucks, but everyone in my office, go look at this thing because..."
+- in the do-and-document
+    - show what "we" did.
+    - start with statements
+    - here is what we did
+    - *now* so when you do this, try this thing
+- have the image of wrapping something up in a nice little box
+- concrete examples
+    - lean into the part of the person bringing your project
+    - act into it -> the audience knows where this is going, so you can lean into it. 
+    - I had to find the exciting stuff. It wasn't that easy, but I made it into a satisfying adventure. 
+    
+    better off with an "MP4", you get the media control. 
