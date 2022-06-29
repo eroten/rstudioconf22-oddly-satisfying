@@ -117,11 +117,10 @@ xaringanExtra::use_banner(
 ---
 class: animated fadeInUp fadeOutUp
 .pull-left[
-### From this...  
+### From this...
 ```{r, out.width = "600px", echo=F}
 knitr::include_graphics("./assets/fig/stitch_eyes.webp")
 ```
-
 ]
 ---
 class: animated fadeInUp fadeOutUp
@@ -131,60 +130,6 @@ class: animated fadeInUp fadeOutUp
 knitr::include_graphics("./assets/fig/tart_icing.gif")
 ```
 ]
-
----
-## Typography
-
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
-
-[Link to another slide](#colors).
-
-### Lorem Ipsum
-
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-
-
----
-name: colors
-
-## Colors
-
-.left-column[
-Text color
-[Link Color](#3)
-**Bold Color**
-_Italic Color_
-`Inline Code`
-]
-
-
----
-
-# Big Topic or Inverse Slides `#`
-
-## Slide Headings `##`
-
-### Sub-slide Headings `###`
-
-#### Bold Call-Out `####`
-
-This is a normal paragraph text. Only use header levels 1-4.
-
----
-
-# Left-Column Headings
-
-.left-column[
-## First
-
-## Second
-]
-
-.right-column[
-Dolor quis aptent mus a dictum ultricies egestas.
-
-]
-
 ---
 class: inverse center middle
 
