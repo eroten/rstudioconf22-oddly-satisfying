@@ -1,6 +1,6 @@
 Supporting materials
 ================
-2022-06-23
+2022-06-30
 
 ## Color palette
 
@@ -135,3 +135,24 @@ Better Together - Jack Johnson</a>
 </iframe>
 
 </div>
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mama_mila_/video/7031854261164117249" data-video-id="7031854261164117249" style="max-width: 605px;min-width: 325px;">
+<section>
+<a target="_blank" title="@mama_mila_" href="https://www.tiktok.com/@mama_mila_">@mama_mila\_</a>
+Add some cheer this year 🎁
+<a title="christmas2021" target="_blank" href="https://www.tiktok.com/tag/christmas2021">\#christmas2021</a>
+<a title="christmastiktok" target="_blank" href="https://www.tiktok.com/tag/christmastiktok">\#christmastiktok</a>
+<a title="giftwrapping" target="_blank" href="https://www.tiktok.com/tag/giftwrapping">\#giftwrapping</a>
+<a target="_blank" title="♬ original sound - ✰ Christmas sounds ✰" href="https://www.tiktok.com/music/original-sound-6755198984157186821">♬
+original sound - ✰ Christmas sounds ✰</a>
+</section>
+</blockquote>
+<script async src="https://www.tiktok.com/embed.js"></script>
+
+<https://pin.it/5J7DmHS> - brown, slow wrapping
+
+<https://pin.it/60dWxaS> - pink, wrapping utensils
+
+This entire pinterest <https://www.pinterest.com/westwinges/_created/>
+
+<https://pin.it/4V7t4zy> - green, plain box
