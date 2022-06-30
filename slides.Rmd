@@ -113,6 +113,9 @@ xaringanExtra::use_banner(
 ```
 
 # There are 
+<!-- This project was pitched to me as a quick data science win.  -->
+<!-- It would be straightforward, simple, and logical -->
+<!-- We are just updating some data -->
 
 ---
 class: animated fadeInUp fadeOutUp
@@ -136,19 +139,43 @@ class: inverse center middle
 # Assess the damage
 
 ---
-# Project Intake 
+# Complete an intake 
 
-- Keep a list of all the things you dislike
+--
+- Read through everything - actually, everything
+
+--
+
+- Keep a list of all the things you dislike  
+
+--
+<!-- You may find yourself in a place where the longform PDF documentatation doesn't align with what is happening in an Excel workbook -->
+<!-- This is the time to resolve that, and start -->
 - Replicate findings/results
+
+--
 - Find your thing
 
 ---
-# Find your thing
+# Find your ✨thing✨
 
-find something about this project that you can go all-out. 
+Find some aspect of this project you can make shine.
+--
 
-Do you like maps? Make the best maps ever  
-Do you like plots? Make some gorgeous visualizations
+
+Maps? Make the best maps ever   
+  
+  
+--
+
+
+Efficiency? Unleash your `purrr`
+
+
+--
+<!-- Not sure yet? Find a new skill and use this as a learning opportunity -->
+Not sure? Pick out a new skill to learn
+
 ---
 class: inverse center middle
 
@@ -162,15 +189,29 @@ class: inverse center middle
 ---
 class: inverse center middle
 
-# Post-project debrief
-
----
 # Leave a gift, not a mystery
 
 ---
-class: center, middle
+## Post project debrief
 
-# Thanks!
+
+<!-- Once the project is complete, and really truly complete, take a break -->
+- You should be a slightly different person than when you closed the project
+---
+
+## Document not only the **what**, but the **why**
+
+We used 2019 AADT  
+<!-- this is a factual statement, but doesn't tell us why  -->
+<!-- But, we completed this update in 2021, after the 2020 data had been released? -->
+
+"We used 2019 traffic data __because__ 2020 was anomalous"
+---
+# I still don't care about trucks
+
+---
+class: center, middle
+# Thanks!  
 ---
 class: end-matter
 
