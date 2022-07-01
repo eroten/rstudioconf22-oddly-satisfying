@@ -129,9 +129,9 @@ knitr::include_graphics("./assets/fig/stitch_eyes.webp")
 class: animated fadeInUp fadeOutUp
 .pull-right[
 ### ...to this
-```{r, out.width = "380px", out.height="475px", echo=F}
-knitr::include_graphics("./assets/fig/tart_icing.gif")
-```
+<video id="tart-icing" controls muted height="400px" width="500px">
+  <source src="assets/fig/tart_icing.mp4" type="video/mp4">
+</video>
 ]
 ---
 class: inverse center middle
@@ -194,9 +194,15 @@ class: inverse center middle
 ---
 ## Post project debrief
 
-
+.pull-left[
+<video id="gift-video" controls muted height="400px" width="500px">
+  <source src="assets/fig/leave-a-gift.mp4" type="video/mp4">
+</video>
+]
+.pull-right[
 <!-- Once the project is complete, and really truly complete, take a break -->
 - You should be a slightly different person than when you closed the project
+]
 ---
 
 ## Document not only the **what**, but the **why**
