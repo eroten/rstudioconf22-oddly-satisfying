@@ -5,6 +5,7 @@ author: "Liz Roten"
 date: "July 27, 2022"
 output:
   xaringan::moon_reader:
+    self_contained: true
     chakra: assets/libs/remark-latest.min.js
     css: assets/css/xaringan-themer.css
     includes:

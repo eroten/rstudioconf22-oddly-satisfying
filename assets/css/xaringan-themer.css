@@ -142,7 +142,7 @@ a, a > code {
 }
 .title-slide {
   background-color: var(--title-slide-background-color);
-  background-image: url("../../supporting-materials_files/figure-gfm/watercolor-plot-1.png");
+  background-image: url("../../supporting-materials_files/figure-html/watercolor-plot-1.png");
   background-size: cover;
 }
 .title-slide .remark-slide-number {
