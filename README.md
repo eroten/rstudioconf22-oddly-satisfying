@@ -8,7 +8,7 @@
 
 This repo contains slides and supporting materials for my presentation
 at the [2022 RStudio Conference](https://www.rstudio.com/conference/) in
-Washington D.C, July 28-29.
+Washington D.C, July 27-29.
 
 > It happens to us all - a request to update a workflow or data started
 > before your time. The materials left behind leave much to be desired;
@@ -77,7 +77,7 @@ This could potentially be remedied by modularization and clever
 ## ├── slides.html
 ## ├── <span style='color: #0000BB; font-weight: bold;'>slides_files</span>
 ## ├── <span style='color: #00BB00;'>supporting-materials.Rmd</span>
-## ├── supporting-materials.md
+## ├── supporting-materials.html
 ## ├── <span style='color: #0000BB; font-weight: bold;'>supporting-materials_cache</span>
 ## └── <span style='color: #0000BB; font-weight: bold;'>supporting-materials_files</span>
 </CODE></PRE>
