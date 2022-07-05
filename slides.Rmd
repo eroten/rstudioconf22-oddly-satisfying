@@ -97,7 +97,7 @@ style_duo_accent(
       "line-height" = "1"
     )
   ),
-  title_slide_background_image = "../../supporting-materials_files/figure-gfm/watercolor-plot-1.png",
+  title_slide_background_image = "../../supporting-materials_files/figure-html/watercolor-plot-1.png",
   # etc.
   outfile = "assets/css/xaringan-themer.css"
 )
