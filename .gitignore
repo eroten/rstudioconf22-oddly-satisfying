@@ -37,3 +37,5 @@ vignettes/*.pdf
 
 libs/
 .talismanrc
+
+README.html
