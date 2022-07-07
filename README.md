@@ -1,5 +1,6 @@
 ---
 title: Oddly Satisfying - Find delight in the mundane  
+subtitle: July 27, 2022, 1:50pm - 2:10pm, https://sched.co/11iYl
 ---
 <!-- badges: start -->
 <!-- badges: end -->
@@ -13,11 +14,11 @@ This repo contains slides and supporting materials for my presentation at the [2
 
 A _crisp_ 20 minutes.   
 
-- ✔️ Mid-June: schedule brown-bag style runthrough 
-- ✔️ July 1: Have content mostly finalized 
-- ✔️ July 1: Schedule get haircut 
-- ✔️ July 5: Updated talk abstract, speaker bio, post promo on social
-- ✔️ July 6: [blog post](https://www.lizroten.com/post/color-palette-exploration/) with color palette plots 
+- :heavy_check_mark: Mid-June: schedule brown-bag style runthrough 
+- :heavy_check_mark: July 1: Have content mostly finalized 
+- :heavy_check_mark:️ July 1: Schedule get haircut 
+- :heavy_check_mark:️ July 5: Updated talk abstract, speaker bio, post promo on social
+- :heavy_check_mark: July 6: [blog post](https://www.lizroten.com/post/color-palette-exploration/) with color palette plots 
 - July 7: Outfit assembly
 - July 12: Speaker Coaching Content Review  
 - July 21: Complete talk backup recording
