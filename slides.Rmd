@@ -126,25 +126,37 @@ xaringanExtra::use_banner(
                text_color = midnight$code))
 ```
 
-# There are 
+# I found myself
+comparing the number of axels to expected weight in commercial freight trucks in the state of Minnesota 
+
+.center[
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);">
+]
 <!-- This project was pitched to me as a quick data science win.  -->
 <!-- It would be straightforward, simple, and logical -->
 <!-- We are just updating some data -->
+---
+## Internet phenomenon, of oddly statisfying things
+
+- objects fitting perfectly into other objects
+- perfect cake decoration
+- pressure washing very dirty things  
 
 ---
-class: animated fadeInUp fadeOutUp
+class: animated fadeInUp
+
+
 .pull-left[
-### From this...
-```{r, out.width = "600px", echo=F}
-knitr::include_graphics("./assets/fig/stitch_eyes.webp")
-```
+### Smoothie!
+<video id="smoothie" controls muted height="400px" width="500px">
+<source src="assets/fig/smoothie_satisfying.mp4" type="video/mp4">
+</video>
 ]
----
-class: animated fadeInUp fadeOutUp
+
 .pull-right[
-### ...to this
+### Tarts!
 <video id="tart-icing" controls muted height="400px" width="500px">
-  <source src="assets/fig/tart_icing.mp4" type="video/mp4">
+<source src="assets/fig/tart_icing.mp4" type="video/mp4">
 </video>
 ]
 ---
@@ -153,7 +165,7 @@ class: inverse center middle
 # Assess the damage
 
 ---
-# Complete an intake 
+## Complete an intake 
 
 --
 - Read through everything - actually, everything
@@ -163,32 +175,53 @@ class: inverse center middle
 - Keep a list of all the things you dislike  
 
 --
-<!-- You may find yourself in a place where the longform PDF documentatation doesn't align with what is happening in an Excel workbook -->
+<!-- You may find yourself in a place where the long-form PDF documentation doesn't align with what is happening in an Excel workbook -->
 <!-- This is the time to resolve that, and start -->
 - Replicate findings/results
 
---
-- Find your thing
-
 ---
-# Find your ✨thing✨
+class: center middle animated fadeInUp
+<!-- but, most importantly, you must find your thing -->
+<div id="thing">
+.center.animated.fadeInUp[
+## Find your ✨thing✨
+]
+</div>
+---
+<!-- Find some aspect of this project you can make shine. -->
+.panelset.sideways[
+.panel[.panel-name[Plots?]
 
-Find some aspect of this project you can make shine.
---
+<!-- finally see what that pretty plot on twitter is all about -->
+<img  src="assets/fig/plot_score_abs_change_combo-1.png" alt="a ggplot with multiple data distribution visualization methods" width="70%">
+]
+.panel[.panel-name[Maps?]
+<!-- prepare to make some bespoke ggplot2 legends -->
+<img src="assets/fig/map_all_tiers-1.png" alt="a ggplot with multiple data distribution visualization methods" width="70%">
+] 
+.panel[.panel-name[Speed?]
+<!-- watch out, because your machine is going to be running *hot* -->
+```{r, eval=FALSE}
+# Conflate proposed corridors with MnDOT AADT and HCAADT -----
+proposed_conflation_match <- purrr::map_dfr(
+  1:nrow(all_prop_corridors),
+  function(x) {
+    first_join <- sf::st_join(all_prop_corridors[x, ] %>%
+                                sf::st_transform(26915),
+                              aadt %>%
+                                unique() %>%
+                                sf::st_transform(26915),
+                              largest = FALSE,
+                              left = TRUE)
+    ...
+  })
+```
 
 
-Maps? Make the best maps ever   
+
   
-  
---
-
-
-Efficiency? Unleash your `purrr`
-
-
---
-<!-- Not sure yet? Find a new skill and use this as a learning opportunity -->
-Not sure? Pick out a new skill to learn
+]
+]
 
 ---
 class: inverse center middle
@@ -196,9 +229,12 @@ class: inverse center middle
 # Do and document
 
 ---
-`r emo::ji("love_letter")`
+
+## Complete the work, document along the way
 
 > Documentation is a love letter to your future self.  - Damien Conway 
+
+
 
 ---
 class: inverse center middle
@@ -210,7 +246,7 @@ class: inverse center middle
 
 .pull-left[
 <video id="gift-video" controls muted height="400px" width="500px">
-  <source src="assets/fig/leave-a-gift.mp4" type="video/mp4">
+<source src="assets/fig/leave-a-gift.mp4" type="video/mp4">
 </video>
 ]
 .pull-right[
@@ -218,20 +254,54 @@ class: inverse center middle
 - You should be a slightly different person than when you closed the project
 ]
 ---
+## Not only **what**, but **why**
 
-## Document not only the **what**, but the **why**
+.panelset.sideways[
+.panel[.panel-name[What]
+<!-- this is a factual statement, but doesn't tell us anything about why we would 2019 over any other year  -->
+We used 2019 traffic data
+]
+.panel[.panel-name[Why]
+<!-- here, we add some more context.-->
+<!-- 2020 was a dumpster fire, aka, anomalous, year, so we went with 2019.  -->
+We used 2019 traffic data __because__ 2020 was anomalous 
+]
+]
 
-We used 2019 AADT  
-<!-- this is a factual statement, but doesn't tell us why  -->
-<!-- But, we completed this update in 2021, after the 2020 data had been released? -->
-
-"We used 2019 traffic data __because__ 2020 was anomalous"
 ---
+## Not only **what**, but **why**
+
+.panelset.sideways[
+.panel[.panel-name[What]
+<!-- this is a factual statement, but doesn't tell us anything about why we would 2019 over any other year  -->
+We set the tier breaks at 15.4 and 26.2 points
+]
+.panel[.panel-name[Why]
+<!-- here, we add some more context -->
+We set the tier breaks at 15.4 and 26.2 points __because__ planners used their best judgement
+]
+]
+
+---
+class: center  
 # I still don't care about trucks
+
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);">  
+
+--
+  
+but everyone in my office knows about this documentation
+
+--
+
+and I'm very proud of my work.
 
 ---
 class: center, middle
 # Thanks!  
+
+https://lizroten.com/oddly
+
 ---
 class: end-matter
 
@@ -253,6 +323,8 @@ class: end-matter
 
 - Stitch https://media.giphy.com/media/BbQrNk32kD064/giphy.gif 
 - Mini tart icing https://gfycat.com/needygivingbufeo, as performed by [@jeanimbert](https://www.instagram.com/jeanimbert/?hl=en) 
+- Satisfying smoothie from [fenitas.nl](https://www.tiktok.com/@fenitas.nl/video/7093892979659738373)
+- Truck illustration,  MnDOT vehicle classification scheme. Available [here](https://www.dot.state.mn.us/traffic/data/reports/vc/Vehicle_Classification_Scheme.pdf)
 ---
 
 other advice
@@ -261,18 +333,18 @@ other advice
 - specific way that I saw this in this problem
 - I got this problem that was easy, but it wasn't -> good hook
 - The truck becomes a plot device that can drive the story along
-    - (maybe this big truck image that follows through)
-    - most people won't be interested in the truck, 
+- (maybe this big truck image that follows through)
+- most people won't be interested in the truck, 
 - "I still don't care about trucks, but everyone in my office, go look at this thing because..."
 - in the do-and-document
-    - show what "we" did.
-    - start with statements
-    - here is what we did
-    - *now* so when you do this, try this thing
+- show what "we" did.
+- start with statements
+- here is what we did
+- *now* so when you do this, try this thing
 - have the image of wrapping something up in a nice little box
 - concrete examples
-    - lean into the part of the person bringing your project
-    - act into it -> the audience knows where this is going, so you can lean into it. 
-    - I had to find the exciting stuff. It wasn't that easy, but I made it into a satisfying adventure. 
-    
-    better off with an "MP4", you get the media control. 
+- lean into the part of the person bringing your project
+- act into it -> the audience knows where this is going, so you can lean into it. 
+- I had to find the exciting stuff. It wasn't that easy, but I made it into a satisfying adventure. 
+
+better off with an "MP4", you get the media control. 
