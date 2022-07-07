@@ -322,3 +322,16 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   font-size: 10pt;
   line-height: 1;
 }
+.panel-tabs {
+  font-size: 35pt;
+}
+.panelset .panel-tabs .panel-tab.panel-tab-active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #5A6E73;
+}
+strong {
+  font-weight: bold;
+  color: var(--text-bold-color);
+  text-decoration: underline;
+}
