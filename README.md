@@ -1,7 +1,5 @@
----
-title: Oddly Satisfying - Find delight in the mundane  
-subtitle: July 27, 2022, 1:50pm - 2:10pm, https://sched.co/11iYl
----
+# Oddly Satisfying - Find delight in the mundane  
+### July 27, 2022, 1:50pm - 2:10pm, https://sched.co/11iYl
 <!-- badges: start -->
 <!-- badges: end -->
 
