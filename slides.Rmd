@@ -96,6 +96,19 @@ style_duo_accent(
     ".remark-slide-content.end-matter.hljs-github p" = list(
       "font-size" = "10pt",
       "line-height" = "1"
+    ),
+    ".panel-tabs" = list(
+      "font-size" = "35pt"
+    ),
+    ".panelset .panel-tabs .panel-tab.panel-tab-active" = list(
+      "font-weight"= "bold",
+      "text-decoration" = "underline",
+      "color" = midnight$code
+    ),
+    "strong" = list(
+      "font-weight" = "bold",
+      "color" = "var(--text-bold-color)",
+      "text-decoration" = "underline"
     )
   ),
   title_slide_background_image = "../../supporting-materials_files/figure-html/watercolor-plot-1.png",
@@ -104,7 +117,7 @@ style_duo_accent(
 )
 
 
-xaringanExtra::use_xaringan_extra(c("tile_view", "banner", "animate"))
+xaringanExtra::use_xaringan_extra(c("tile_view", "banner", "animate", "panelset"))
 ```
 ```{r xaringan-banner, echo=FALSE}
 xaringanExtra::use_banner(
