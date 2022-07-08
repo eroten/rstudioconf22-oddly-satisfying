@@ -40,39 +40,91 @@ class: center, middle, inverse, title-slide
 
 <script>document.addEventListener('DOMContentLoaded',function(){new xeBanner(JSON.parse('{"left":"<style>:root {\n  --xe-banner-fg: #5A6E73;\n  --xe-banner-font-size: 20pt;\n}<\/style>","right":"lizroten.com/slides","position":"bottom"}'))})</script>
 
-# I found myself
-comparing the number of axels to expected weight in commercial freight trucks in the state of Minnesota 
-
 .center[
-&lt;img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);"&gt;
-]
+&lt;img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);"&gt;]
+&lt;!-- I went to open the existing materials, and --&gt;
+--
+.center[
+## it was bad]
 &lt;!-- This project was pitched to me as a quick data science win.  --&gt;
 &lt;!-- It would be straightforward, simple, and logical --&gt;
 &lt;!-- We are just updating some data --&gt;
+&lt;!-- This was a lie.  --&gt;
+&lt;!-- In fact, what was left to me was a mess --&gt;
+---
+
+## ...how bad?
+&lt;!-- You might be asking, why is this so bad? --&gt;
+&lt;!-- and because there are so many and you can't read the text, let me describe it --&gt;
+&lt;!-- we have several things going on --&gt;
+--
+.pull-left[
+&lt;img src="assets/fig/extant-dirs.png" alt="A screenshot of many files" style="max-width: 75%"&gt;
+] 
+--
+.pull-right[
+&lt;!-- Which one is *actually* the final one? Is it the most recent chronologically or
+the most recently opened or edited? --&gt;
+&lt;li&gt;Multiple final reports&lt;/li&gt;
+]
+--
+.pull-right[
+&lt;!-- some document are marked as revised
+but who revised them, and why were they revised?
+--&gt;
+&lt;li&gt;"revised" documents&lt;/li&gt;
+]
+--
+.pull-right[
+&lt;!-- In this excel document, there are several sheets with interdependent formulas
+One sheet has over 15,000 rows! --&gt;
+&lt;li&gt;one Excel document, with all the analysis&lt;/li&gt;
+]
+
 ---
 ## Internet phenomenon, of oddly statisfying things
 
-- objects fitting perfectly into other objects
-- perfect cake decoration
+--
+- objects fitting perfectly into other objects  
+
+--
+- perfect cake decoration   
+
+--
 - pressure washing very dirty things  
 
 ---
-class: animated fadeInUp
-
-
+--
 .pull-left[
 ### Smoothie!
 &lt;video id="smoothie" controls muted height="400px" width="500px"&gt;
 &lt;source src="assets/fig/smoothie_satisfying.mp4" type="video/mp4"&gt;
 &lt;/video&gt;
 ]
-
+--
 .pull-right[
 ### Tarts!
 &lt;video id="tart-icing" controls muted height="400px" width="500px"&gt;
 &lt;source src="assets/fig/tart_icing.mp4" type="video/mp4"&gt;
 &lt;/video&gt;
 ]
+
+---
+
+.pull-left[
+so I decided to take my truck,  
+.center[
+&lt;img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);"&gt;]
+]
+
+--
+.pull-right[
+and make it the best truck  
+.center[
+&lt;img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);"&gt;
+]]
+
+
 ---
 class: inverse center middle
 
@@ -86,11 +138,12 @@ class: inverse center middle
 
 --
 
-- Keep a list of all the things you dislike  
+- Keep a list of all the things you hate    
 
 --
 &lt;!-- You may find yourself in a place where the long-form PDF documentation doesn't align with what is happening in an Excel workbook --&gt;
-&lt;!-- This is the time to resolve that, and start --&gt;
+&lt;!-- This is the time to resolve that, and start thinking 
+about how you want to --&gt;
 - Replicate findings/results
 
 ---
@@ -147,14 +200,56 @@ class: inverse center middle
 
 ## Complete the work, document along the way
 
+--
+
 &gt; Documentation is a love letter to your future self.  - Damien Conway 
 
+---
+### Modularize
 
+No single script more than 500 lines  
 
+--
+.pull-left[
+&lt;!-- here, we have a bulky script that may do more than we actually need it to  --&gt;
+
+```r
+all_prop_corridors &lt;- corridors %&gt;% 
+  filter(proposed == TRUE)
+proposed_conflation_match &lt;- purrr::map_dfr(
+  1:nrow(all_prop_corridors),
+  function(x) {
+    first_join &lt;- sf::st_join(
+      all_prop_corridors[x, ],
+      aadt %&gt;%
+        unique(),
+      largest = FALSE,
+      left = TRUE)
+    ...
+  })
+```
+]
+
+--
+.pull-right[
+&lt;!-- here, we've broken out each script into its core functions.
+I can call load_pkgs.R from anywhere, and I know it will JUST call library().
+You can also use numeric prefixes 00, 01, 02 to denote sequential operations--&gt;
+
+```r
+source("load_pkgs.R")
+source("load_data.R")
+source("01_conflate_corridors.R")
+source("02_score_clusters.R")
+source("03_score_facilities.R")
+```
+
+]
 ---
 class: inverse center middle
 
-# Leave a gift, not a mystery
+# Leave a gift, 
+## not a mystery
 
 ---
 ## Post project debrief
@@ -167,6 +262,68 @@ class: inverse center middle
 .pull-right[
 &lt;!-- Once the project is complete, and really truly complete, take a break --&gt;
 - You should be a slightly different person than when you closed the project
+]
+---
+
+.pull-left[
+## Yikes
+&lt;!-- here we have all the intermediate rmarkdowns I wrote when I was evaluating the project and conducting the analysis.  --&gt;
+&lt;!-- A lot of these were dead ends, and I don't need them taking up space in the future. --&gt;
+&lt;PRE class='fansi fansi-output'&gt;&lt;CODE&gt;## &lt;span style='color: #0000BB; font-weight: bold;'&gt;../../MTS/truck-corridor-study/&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;00_sample_corridors.Rmd&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;01_conflate_corridors.Rmd&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;02_calibrate_streetlight.Rmd&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;03_review_streetlight.Rmd&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;04_calibrate_fun_classes.Rmd&lt;/span&gt;
+## ├── 04_calibrate_fun_classes.html
+## ├── &lt;span style='color: #00BB00;'&gt;05_compare_scores.Rmd&lt;/span&gt;
+## ├── 05_compare_scores.html
+## ├── &lt;span style='color: #00BB00;'&gt;06_generate_deliverables.Rmd&lt;/span&gt;
+## ├── 06_generate_deliverables.html
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;06_generate_deliverables_files&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;07_review_corridors.Rmd&lt;/span&gt;
+## ├── 07_review_corridors.html
+## ├── &lt;span style='color: #00BB00;'&gt;08_corridor_additions.Rmd&lt;/span&gt;
+## ├── 08_corridor_additions.html
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;R&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;README.Rmd&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;README.md&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;Tableau&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;data&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;initial_assessment.Rmd&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;initial_assessment.html&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;logo.png&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;output&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;potential_corridor_additions.R&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;references.bib&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;scrap&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;style.css&lt;/span&gt;
+## └── &lt;span style='color: #00BB00; font-weight: bold;'&gt;truck-corridor-study.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
+]
+--
+.pull-right[
+## Yes
+&lt;!-- here, I have dramatically reduced the number of markdowns, down to just three core documents --&gt;
+&lt;!-- A README, a Summary, and Methods --&gt;
+&lt;PRE class='fansi fansi-output'&gt;&lt;CODE&gt;## &lt;span style='color: #0000BB; font-weight: bold;'&gt;../../MTS/truck-corridor-study/&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;R&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;README.Rmd&lt;/span&gt;
+## ├── README.md
+## ├── &lt;span style='color: #00BB00;'&gt;Summary.Rmd&lt;/span&gt;
+## ├── Summary.html
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;Summary_files&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;Tableau&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;data&lt;/span&gt;
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;figures&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;logo.png&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00;'&gt;methods.Rmd&lt;/span&gt;
+## ├── methods.html
+## ├── &lt;span style='color: #0000BB; font-weight: bold;'&gt;scrap&lt;/span&gt;
+## ├── &lt;span style='color: #00BB00; font-weight: bold;'&gt;style.css&lt;/span&gt;
+## └── &lt;span style='color: #00BB00; font-weight: bold;'&gt;truck-corridor-study.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
+
 ]
 ---
 ## Not only **what**, but **why**
@@ -231,52 +388,50 @@ xaringan Slides_. R package version 0.6.0. URL:
 Derks, K. (2022). _aRtsy: Generative Art with ggplot2_. R package version 0.1.8. URL:
 [https://CRAN.R-project.org/package=aRtsy](https://CRAN.R-project.org/package=aRtsy).
 
-Hester, J., H. Wickham, and G. Csárdi (2021). _fs: Cross-Platform File System
-Operations Based on libuv_. R package version 1.5.2. URL:
+Hester, J., H. Wickham, and G. Csárdi (2021). _fs: Cross-Platform File System Operations
+Based on libuv_. R package version 1.5.2. URL:
 [https://CRAN.R-project.org/package=fs](https://CRAN.R-project.org/package=fs).
 
-McLean, M. W. (2017). "RefManageR: Import and Manage BibTeX and BibLaTeX References in
-R". In: _The Journal of Open Source Software_. DOI:
+McLean, M. W. (2017). "RefManageR: Import and Manage BibTeX and BibLaTeX References in R".
+In: _The Journal of Open Source Software_. DOI:
 [10.21105/joss.00338](https://doi.org/10.21105%2Fjoss.00338).
 
-\-\-\- (2020). _RefManageR: Straightforward BibTeX and BibLaTeX Bibliography
-Management_. R package version 1.3.0. URL:
+\-\-\- (2020). _RefManageR: Straightforward BibTeX and BibLaTeX Bibliography Management_. R
+package version 1.3.0. URL:
 [https://github.com/ropensci/RefManageR/](https://github.com/ropensci/RefManageR/).
 
-\-\-\- (2014). _Straightforward Bibliography Management in R Using the RefManager
-Package_. arXiv: 1403.2036 [cs.DL]. URL:
+\-\-\- (2014). _Straightforward Bibliography Management in R Using the RefManager Package_.
+arXiv: 1403.2036 [cs.DL]. URL:
 [https://arxiv.org/abs/1403.2036](https://arxiv.org/abs/1403.2036).
 
-Müller, K. and H. Wickham (2022). _tibble: Simple Data Frames_. R package version
-3.1.7. URL:
+Müller, K. and H. Wickham (2022). _tibble: Simple Data Frames_. R package version 3.1.7.
+URL:
 [https://CRAN.R-project.org/package=tibble](https://CRAN.R-project.org/package=tibble).
 
-Pedersen, T. L. (2020). _patchwork: The Composer of Plots_. R package version 1.1.1.
-URL:
+Pedersen, T. L. (2020). _patchwork: The Composer of Plots_. R package version 1.1.1. URL:
 [https://CRAN.R-project.org/package=patchwork](https://CRAN.R-project.org/package=patchwork).
 
-R Core Team (2022). _R: A Language and Environment for Statistical Computing_. R
-Foundation for Statistical Computing. Vienna, Austria. URL:
+R Core Team (2022). _R: A Language and Environment for Statistical Computing_. R Foundation
+for Statistical Computing. Vienna, Austria. URL:
 [https://www.R-project.org/](https://www.R-project.org/).
 
-Thoen, E. (2022). _dutchmasters: Colour Pallettes based on Famous Paintings_. R
-package version 0.1.0.
+Thoen, E. (2022). _dutchmasters: Colour Pallettes based on Famous Paintings_. R package
+version 0.1.0.
 
-Wickham, H., R. François, L. Henry, et al. (2022). _dplyr: A Grammar of Data
-Manipulation_. R package version 1.0.9. URL:
+Wickham, H., R. François, L. Henry, et al. (2022). _dplyr: A Grammar of Data Manipulation_.
+R package version 1.0.9. URL:
 [https://CRAN.R-project.org/package=dplyr](https://CRAN.R-project.org/package=dplyr).
 
-Xie, Y. (2015). _Dynamic Documents with R and knitr_. 2nd. ISBN 978-1498716963. Boca
-Raton, Florida: Chapman and Hall/CRC. URL:
-[https://yihui.org/knitr/](https://yihui.org/knitr/).
+Xie, Y. (2015). _Dynamic Documents with R and knitr_. 2nd. ISBN 978-1498716963. Boca Raton,
+Florida: Chapman and Hall/CRC. URL: [https://yihui.org/knitr/](https://yihui.org/knitr/).
 
 \-\-\- (2014). "knitr: A Comprehensive Tool for Reproducible Research in R". In:
-_Implementing Reproducible Computational Research_. Ed. by V. Stodden, F. Leisch and
-R. D. Peng. ISBN 978-1466561595. Chapman and Hall/CRC. URL:
+_Implementing Reproducible Computational Research_. Ed. by V. Stodden, F. Leisch and R. D.
+Peng. ISBN 978-1466561595. Chapman and Hall/CRC. URL:
 [http://www.crcpress.com/product/isbn/9781466561595](http://www.crcpress.com/product/isbn/9781466561595).
 
-\-\-\- (2022). _knitr: A General-Purpose Package for Dynamic Report Generation in R_.
-R package version 1.39. URL: [https://yihui.org/knitr/](https://yihui.org/knitr/).
+\-\-\- (2022). _knitr: A General-Purpose Package for Dynamic Report Generation in R_. R
+package version 1.39. URL: [https://yihui.org/knitr/](https://yihui.org/knitr/).
 
 ---
 class: end-matter
@@ -318,7 +473,7 @@ better off with an "MP4", you get the media control.
 "highlightStyle": "github",
 "highlightLines": true,
 "ratio": "16:9",
-"countIncrementalSlides": true
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
