@@ -491,8 +491,7 @@ class: inverse center middle
 ## Post project debrief
 
 .pull-left[
-<video id="gift-video" controls muted height="400px" width="500px">
-<source src="assets/fig/leave-a-gift.mp4" type="video/mp4">
+<video id="gift-video" controls muted height="400px" width="500px" src="assets/fig/leave-a-gift.mp4" type="video/mp4">
 </video>
 ]
 --
