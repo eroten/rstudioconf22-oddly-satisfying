@@ -173,8 +173,9 @@ the most recently opened or edited? -->
 ]
 --
 .pull-right[
-<!-- some document are marked as revised but who revised them, and why were they revised?-->
-<li><Multiple "revised" documents</li>
+<!-- some document are marked as revised. but who revised them,
+and why were they revised?-->
+<li>Multiple revised documents</li>
 ]
 --
 .pull-right[
@@ -184,23 +185,22 @@ One sheet has over 15,000 rows! -->
 ]
 <!-- I realized that this project was going to be more than I thought it was
 I also got really into this internet phenomenon of oddly satisfying things-->
----
 <!-- what is an oddly satisfying thing? -->
+
+---
 --
 .pull-left[
 ### Smoothie!
 <video id="smoothie" controls muted height="400px" width="500px"
 src="assets/fig/smoothie_satisfying.mp4" type="video/mp4">
-</video>
-]
+</video>]
 --
 .pull-right[
 ### Tarts!
 <video id="tart-icing" controls muted height="400px" width="500px" src="assets/fig/tart_icing.mp4" type="video/mp4">
-</video>
-]
-<!-- there is something about this type of video that just calms my soul -->
+</video>]
 ---
+<!-- there is something about this type of video that just calms my soul -->
 
  I decided to take my truck,  
 .center[
