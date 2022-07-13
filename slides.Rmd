@@ -173,9 +173,7 @@ the most recently opened or edited? -->
 ]
 --
 .pull-right[
-<!-- some document are marked as revised
-but who revised them, and why were they revised?
--->
+<!-- some document are marked as revised but who revised them, and why were they revised?-->
 <li><Multiple "revised" documents</li>
 ]
 --
@@ -192,7 +190,7 @@ I also got really into this internet phenomenon of oddly satisfying things-->
 .pull-left[
 ### Smoothie!
 <video id="smoothie" controls muted height="400px" width="500px"
-src="assets/fig/smoothie_satisfying.mp4" type="video/mp4"
+src="assets/fig/smoothie_satisfying.mp4" type="video/mp4">
 </video>
 ]
 --
