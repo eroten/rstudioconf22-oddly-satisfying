@@ -14,11 +14,11 @@ A _crisp_ 20 minutes.
 
 - :heavy_check_mark: Mid-June: schedule brown-bag style runthrough 
 - :heavy_check_mark: July 1: Have content mostly finalized 
-- :heavy_check_mark:️ July 1: Schedule get haircut 
+- :heavy_check_mark:️ July 1: Schedule haircut 
 - :heavy_check_mark:️ July 5: Updated talk abstract, speaker bio, post promo on social
 - :heavy_check_mark: July 6: [blog post](https://www.lizroten.com/post/color-palette-exploration/) with color palette plots 
 - July 7: Outfit assembly
-- July 12: Speaker Coaching Content Review  
+- :heavy_check_mark: July 12: Speaker Coaching Content Review  
 - July 21: Complete talk backup recording
 - July 24: FLIGHT TO DC!
 - July 25-27
@@ -29,13 +29,7 @@ Contact person - Kim Goldsmith!
 
 ## Presentation  
 
-Current plan is to use xaringan, but this might get difficult due to challenges with HTML styling. Backup is MS PowerPoint.  
-
-This *shouldn't* have any actual tabular data, but we will see. 
-
-My previous experience with '{xaringinan}' makes me have some reservations about using it for this talk. This talk may rely heavily on screenshots and images. I also DREAD the constant scrolling up and down to get to each slide and the messy outline panel. 
-
-This could potentially be remedied by modularization and clever `results='asis'` chunks.  
+Slides are made using `{xaringan}`
 
 ### Repo structure  
 
