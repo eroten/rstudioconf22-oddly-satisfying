@@ -36,9 +36,7 @@ knitr::opts_chunk$set(
 old_hooks <- fansi::set_knit_hooks(knitr::knit_hooks,
   which = c("output", "message", "error")
 )
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 library(dplyr)
 library(dutchmasters)
@@ -59,6 +57,14 @@ midnight <- palette %>% filter(family == "midnight", level == 1)
 clay <- palette %>% filter(family == "clay", level == 1)
 seaweed <- palette %>% filter(family == "seaweed", level == 25)
 
+```
+```{r xaringan-banner, echo=FALSE}
+xaringanExtra::use_banner(
+  bottom_right = "lizroten.com/oddly",
+  exclude = c("title-slide",
+              "inverse"))
+```
+```{r xaringan-themer, include=FALSE, warning=FALSE}
 style_duo_accent(
   # basic colors
   text_slide_number_font_size = 0,
@@ -117,7 +123,15 @@ style_duo_accent(
       "text-decoration" = "underline"
     ),
     ".pull-right + *" = list(
-      "clear"= "none")
+      "clear"= "none"),
+    
+    ".xe-banner" = list(
+      "color" = midnight$code,
+      "text-decoration" = "underline"
+    ),
+    ".inverse > .xe-banner" = list(
+      "color"  = "transparent"
+    )
     
   ),
   title_slide_background_image = "../../supporting-materials_files/figure-html/watercolor-plot-1.png",
@@ -128,15 +142,10 @@ style_duo_accent(
 
 xaringanExtra::use_xaringan_extra(c("tile_view", "banner", "animate", "panelset"))
 ```
-```{r xaringan-banner, echo=FALSE}
-xaringanExtra::use_banner(
-  bottom_right = "lizroten.com/slides",
-  style_banner(font_size = "20pt",
-               text_color = midnight$code))
-```
+
 
 .center[
-<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);">]
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a large truck" style="transform: scaleX(-1);">]
 <!-- I went to open the existing materials, and -->
 --
 .center[
@@ -167,7 +176,7 @@ the most recently opened or edited? -->
 <!-- some document are marked as revised
 but who revised them, and why were they revised?
 -->
-<li>"revised" documents</li>
+<li><Multiple "revised" documents</li>
 ]
 --
 .pull-right[
@@ -175,20 +184,10 @@ but who revised them, and why were they revised?
 One sheet has over 15,000 rows! -->
 <li>one Excel document, with all the analysis</li>
 ]
-
+<!-- I realized that this project was going to be more than I thought it was
+I also got really into this internet phenomenon of oddly satisfying things-->
 ---
-## Internet phenomenon, of oddly statisfying things
-
---
-- objects fitting perfectly into other objects  
-
---
-- perfect cake decoration   
-
---
-- pressure washing very dirty things  
-
----
+<!-- what is an oddly satisfying thing? -->
 --
 .pull-left[
 ### Smoothie!
@@ -203,43 +202,60 @@ One sheet has over 15,000 rows! -->
 <source src="assets/fig/tart_icing.mp4" type="video/mp4">
 </video>
 ]
-
+<!-- there is something about this type of video that just calms my soul -->
 ---
 
-.pull-left[
-so I decided to take my truck,  
+ I decided to take my truck,  
 .center[
-<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);">]
+<br>
+<br>
+<div>
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a large truck" style="transform: scaleX(-1); position: absolute;left: 447px;top: 400px;">
+<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/310/crying-face_1f622.png" alt="Crying face emoji" width="70px" style="position: absolute; top: 321px; left: 47%">
+</div>
 ]
 
---
-.pull-right[
-and make it the best truck  
+---
+I decided to take my truck, and make it the best truck  
 .center[
-<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);">
-]]
+<div class="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Rainbow-diagram-ROYGBIV.svg/800px-Rainbow-diagram-ROYGBIV.svg.png?20200807113632" alt="A classic rainbow with 8 colors" style= "position:relative;">
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a large truck" style="transform: scaleX(-1); position: absolute;left: 447px;top: 400px;">
+<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/310/grinning-face-with-big-eyes_1f603.png" alt="Grinning face with big eyes emoji" width="70px" style="position: absolute; top: 321px; left: 47%">
+</div>
+]
 
 
 ---
 class: inverse center middle
 
 # Assess the damage
-
 ---
 ## Complete an intake 
 
 --
-- Read through everything - actually, everything
+- Read through everything
+
+---
+## Complete an intake 
+
+- Read through everything .primary[-- actually everything]
 
 --
 
-- Keep a list of all the things you hate    
-
+- Make a hate list
+<!-- Not of people! Just bad documentation
+Maybe the longform documentation doesn't match whats happening in the Excel workbook
+Maybe some of the notes are super vague-->
 --
 <!-- You may find yourself in a place where the long-form PDF documentation doesn't align with what is happening in an Excel workbook -->
 <!-- This is the time to resolve that, and start thinking 
 about how you want to -->
 - Replicate findings/results
+
+--
+
+- Find your ✨thing✨
 
 ---
 class: center middle animated fadeInUp
@@ -286,6 +302,12 @@ proposed_conflation_match <- purrr::map_dfr(
 ]
 
 ---
+Your  ✨thing✨ is what will power the project
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a large truck" style="transform: scaleX(-1); position: absolute;left: 447px;top: 400px;">
+--
+and keep you sane
+
+---
 class: inverse center middle
 
 # Do and document
@@ -299,7 +321,8 @@ class: inverse center middle
 > Documentation is a love letter to your future self.  - Damien Conway 
 
 ---
-### Modularize
+### Modularize  
+--
 
 No single script more than 500 lines  
 
@@ -329,7 +352,7 @@ proposed_conflation_match <- purrr::map_dfr(
 I can call load_pkgs.R from anywhere, and I know it will JUST call library().
 You can also use numeric prefixes 00, 01, 02 to denote sequential operations-->
 ```{r, eval=FALSE}
-source("load_pkgs.R")
+source("load_pkgs.R") 
 source("load_data.R")
 source("01_conflate_corridors.R")
 source("02_score_clusters.R")
@@ -338,6 +361,128 @@ source("03_score_facilities.R")
 
 ]
 ---
+### Modularize
+
+No single script more than 500 lines  
+
+.pull-left[
+<!-- here, we have a bulky script that may do more than we actually need it to  -->
+```{r, eval=FALSE}
+all_prop_corridors <- corridors %>% 
+  filter(proposed == TRUE)
+proposed_conflation_match <- purrr::map_dfr(
+  1:nrow(all_prop_corridors),
+  function(x) {
+    first_join <- sf::st_join(
+      all_prop_corridors[x, ],
+      aadt %>%
+        unique(),
+      largest = FALSE,
+      left = TRUE)
+    ...
+  })
+```
+]
+
+.pull-right[
+<!-- here, we've broken out each script into its core functions.
+I can call load_pkgs.R from anywhere, and I know it will JUST call library().
+You can also use numeric prefixes 00, 01, 02 to denote sequential operations-->
+```{r, eval=FALSE}
+source("load_pkgs.R") #<<
+source("load_data.R")
+source("01_conflate_corridors.R")
+source("02_score_clusters.R")
+source("03_score_facilities.R")
+```
+
+]
+---
+
+### Modularize
+
+No single script more than 500 lines  
+
+.pull-left[
+<!-- here, we have a bulky script that may do more than we actually need it to  -->
+```{r, eval=FALSE}
+all_prop_corridors <- corridors %>% 
+  filter(proposed == TRUE)
+proposed_conflation_match <- purrr::map_dfr(
+  1:nrow(all_prop_corridors),
+  function(x) {
+    first_join <- sf::st_join(
+      all_prop_corridors[x, ],
+      aadt %>%
+        unique(),
+      largest = FALSE,
+      left = TRUE)
+    ...
+  })
+```
+]
+
+.pull-right[
+<!-- here, we've broken out each script into its core functions.
+I can call load_pkgs.R from anywhere, and I know it will JUST call library().
+You can also use numeric prefixes 00, 01, 02 to denote sequential operations-->
+```{r, eval=FALSE}
+source("load_pkgs.R")
+source("load_data.R") #<<
+source("01_conflate_corridors.R")
+source("02_score_clusters.R")
+source("03_score_facilities.R")
+```
+
+]
+---
+
+.panelset[
+.panel[.panel-name[Context]
+.pull-left[
+<img width="600px" src="assets/fig/readme-intro.png" alt="A screenshot of a README document">
+]
+
+.pull-right[
+
+- What even **is** this thing?
+
+- Why does this thing exist?
+
+- What is the history?  
+
+]
+
+.panel[.panel-name[Structure]
+.pull-left[
+<img width="600px" src="assets/fig/readme-structure.png" alt="A screenshot of a README document">]
+
+.pull-right[
+- How is it organized?
+<!-- Please, let there be a system -->
+- Where does the data live?
+
+- Where do you actually **do** the thing? 
+]
+]
+.panel[.panel-name[Key]
+.pull-left[<img width="600px" src="assets/fig/readme-key.png" alt="A screenshot of a README document">
+]
+.pull-right[
+- Hate list -> Love list
+
+- At the most fundamental level, what is the operative component and how is it done?
+
+- Link to specific scripts!
+
+]
+]
+
+]
+]
+
+---
+
 class: inverse center middle
 
 # Leave a gift, 
@@ -351,9 +496,16 @@ class: inverse center middle
 <source src="assets/fig/leave-a-gift.mp4" type="video/mp4">
 </video>
 ]
+--
 .pull-right[
+- Take a break!
+
 <!-- Once the project is complete, and really truly complete, take a break -->
-- You should be a slightly different person than when you closed the project
+<!-- - You should be a slightly different person than when you closed the project -->
+
+- Condense and clarify
+
+<!-- - a git commit history is not a sufficient  record-->
 ]
 ---
 
@@ -454,7 +606,7 @@ We set the tier breaks at 15.4 and 26.2 points __because__ planners used their b
 class: center  
 # I still don't care about trucks
 
-<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a truck" style="transform: scaleX(-1);">  
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a large truck" style="transform: scaleX(-1);">  
 
 --
   
@@ -493,6 +645,8 @@ class: end-matter
 - Mini tart icing https://gfycat.com/needygivingbufeo, as performed by [@jeanimbert](https://www.instagram.com/jeanimbert/?hl=en) 
 - Satisfying smoothie from [fenitas.nl](https://www.tiktok.com/@fenitas.nl/video/7093892979659738373)
 - Truck illustration,  MnDOT vehicle classification scheme. Available [here](https://www.dot.state.mn.us/traffic/data/reports/vc/Vehicle_Classification_Scheme.pdf)
+- Rainbow illustration: Oren neu dag, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons
+- Emoji images (Microsoft version) via [Emojipedia](https://emojipedia.org/)
 ---
 
 other advice
