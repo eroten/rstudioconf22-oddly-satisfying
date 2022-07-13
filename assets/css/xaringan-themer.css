@@ -338,3 +338,10 @@ strong {
 .pull-right + * {
   clear: none;
 }
+.xe-banner {
+  color: #5A6E73;
+  text-decoration: underline;
+}
+.inverse > .xe-banner {
+  color: transparent;
+}
