@@ -187,11 +187,18 @@ and why were they revised?-->
 .pull-right[
 <!-- In this excel document, there are several sheets with interdependent formulas
 One sheet has over 15,000 rows! -->
-<li>one Excel document, with all the analysis</li>
+<li>One Excel workbook, with all the analysis</li>
 ]
 <!-- I realized that this project was going to be more than I thought it was
 I also got really into this internet phenomenon of oddly satisfying things-->
 <!-- what is an oddly satisfying thing? -->
+
+---
+## Oddly satisfying  
+--
+.center[
+<img src="assets/fig/crab_with_fish.jpg" alt="A tiny crab holding a tiny fish" height="350px">
+]
 
 ---
 --
