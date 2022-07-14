@@ -340,8 +340,12 @@ strong {
 }
 .xe-banner {
   color: #5A6E73;
-  text-decoration: underline;
+  font-size: 0.65em;
 }
 .inverse > .xe-banner {
   color: transparent;
+}
+.inverse a, .inverse a .xe-banner  > code {
+  color: transparent !important;
+  text-decoration: none;
 }
