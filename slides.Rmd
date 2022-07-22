@@ -7,10 +7,11 @@ output:
   xaringan::moon_reader:
     self_contained: true
     chakra: ./assets/libs/remark-latest.min.js
-    css: ./assets/css/xaringan-themer.css
+    css: ["./assets/css/xaringan-themer.css", "./assets/xaringan_columns/cols.css"]
     includes:
       in_header: ./assets/header.html
     nature:
+      beforeInit: "./assets/xaringan_columns/cols_macro.js"
       slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
