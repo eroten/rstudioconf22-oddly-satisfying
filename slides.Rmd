@@ -677,8 +677,17 @@ but everyone in my office knows about this documentation
 --
 
 and I'm very proud of my work.
+---
+
+.center[
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a large truck" style="transform: scaleX(-1);position: absolute;max-width: 19%;top: 336px;right: 500px;">
+<img src="assets/fig/crab_with_fish.jpg" alt="A tiny crab holding a tiny fish" height="550px">
+]
+
 
 ---
+
+
 class: center, middle
 # Thanks!  
 
