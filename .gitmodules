@@ -1,0 +1,3 @@
+[submodule "assets/xaringan_columns"]
+	path = assets/xaringan_columns
+	url = git@github.com:eroten/xaringan_columns.git
