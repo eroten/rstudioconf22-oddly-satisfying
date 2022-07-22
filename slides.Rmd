@@ -457,7 +457,49 @@ source("03_score_facilities.R")
 
 ]
 ---
+## Make a bespoke README  
+--
 
+.readme-def[
+> <i>noun</i>
+> an explanatory document that accompanies computer files or software
+
+]
+
+<br/>
+
+--
+  
+
+![:col_header  Context]
+
+---
+## Make a bespoke README  
+
+.readme-def[
+> <i>noun</i>
+> an explanatory document that accompanies computer files or software
+
+]
+
+<br/>
+
+![:col_header  Context, Structure]
+---
+
+## Make a bespoke README  
+
+.readme-def[
+> <i>noun</i>
+> an explanatory document that accompanies computer files or software
+
+]
+
+<br/>
+
+![:col_header  Context, Structure, Key information]
+
+---
 .panelset[
 .panel[.panel-name[Context]
 .pull-left[
