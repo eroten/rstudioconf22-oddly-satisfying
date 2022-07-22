@@ -9,7 +9,7 @@ output:
     chakra: ./assets/libs/remark-latest.min.js
     css: ["./assets/css/xaringan-themer.css", "./assets/xaringan_columns/cols.css"]
     includes:
-      in_header: ./assets/header.html
+      in_header: "./assets/header.html"
     nature:
       beforeInit: "./assets/xaringan_columns/cols_macro.js"
       slideNumberFormat: "%current%"
@@ -343,6 +343,9 @@ class: inverse center middle
 
 ---
 ### Modularize  
+
+---
+### Modularize  
 --
 
 No single script more than 500 lines  
@@ -663,6 +666,21 @@ We set the tier breaks at 15.4 and 26.2 points
 We set the tier breaks at 15.4 and 26.2 points __because__ planners used their best judgement
 ]
 ]
+
+---
+## Aim for reproducibility  
+--
+
+- Record package versions
+
+--
+
+- Timestamp outputs
+
+--
+
+- 
+
 
 ---
 class: center  
