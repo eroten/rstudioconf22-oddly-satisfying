@@ -344,13 +344,18 @@ class: inverse center middle
 ---
 ### Modularize  
 
----
-### Modularize  
+.pull-left[
+<img src="assets/fig/cranberry-tart.webp" alt="An image of a cranberry tart, cut into even slices with beautiful decoration" style="transform: scaleX(-1);">  
+]
 --
 
+
+.pull-right[
 No single script more than 500 lines  
+]
 
---
+---
+### Modularize 
 .pull-left[
 <!-- here, we have a bulky script that may do more than we actually need it to  -->
 ```{r, eval=FALSE}
@@ -386,8 +391,6 @@ source("03_score_facilities.R")
 ]
 ---
 ### Modularize
-
-No single script more than 500 lines  
 
 .pull-left[
 <!-- here, we have a bulky script that may do more than we actually need it to  -->
@@ -425,7 +428,6 @@ source("03_score_facilities.R")
 
 ### Modularize
 
-No single script more than 500 lines  
 
 .pull-left[
 <!-- here, we have a bulky script that may do more than we actually need it to  -->
@@ -557,23 +559,37 @@ class: inverse center middle
 ---
 ## Post project debrief
 
-.pull-left[
+.center[
 <video id="gift-video" controls muted height="400px" width="500px" src="assets/fig/leave-a-gift.mp4" type="video/mp4">
 </video>
 ]
---
+---
+## Post project debrief
+
+.pull-left[
+.center[
+<img width="200px" src="assets/fig/leave-a-gift.jpg" alt="A still image of a beautifully wrapped gift">]
+]
 .pull-right[
 - Take a break!
 
 <!-- Once the project is complete, and really truly complete, take a break -->
 <!-- - You should be a slightly different person than when you closed the project -->
+]
+---
+## Post project debrief
+
+.pull-left[
+.center[
+<img width="200px" src="assets/fig/leave-a-gift.jpg" alt="A still image of a beautifully wrapped gift">]
+]
+.pull-right[
+- Take a break!
 
 - Condense and clarify
 
-<!-- - a git commit history is not a sufficient  record-->
 ]
 ---
-
 .pull-left[
 ## Yikes
 <!-- here we have all the intermediate rmarkdowns I wrote when I was evaluating the project and conducting the analysis.  -->
@@ -675,12 +691,20 @@ We set the tier breaks at 15.4 and 26.2 points __because__ planners used their b
 
 --
 
+    - Try `{groundhog}`, `{pak}`, or `{renv}`
+    
+--
+
 - Timestamp outputs
 
 --
 
-- 
+    - With a year, month, **and** day!
 
+---
+class: center  
+
+<img src="assets/fig/mndot_4plus_single.png" alt="A black and white line art illustration of a large truck" style="transform: scaleX(-1); position: relative; top: 192px">  
 
 ---
 class: center  
@@ -733,6 +757,7 @@ class: end-matter
 - Mini tart icing https://gfycat.com/needygivingbufeo, as performed by [@jeanimbert](https://www.instagram.com/jeanimbert/?hl=en) 
 - Satisfying smoothie from [fenitas.nl](https://www.tiktok.com/@fenitas.nl/video/7093892979659738373)
 - Tiny crab with tiny fish via [Reddit](https://www.reddit.com/r/oddlysatisfying/comments/vv6g4g/i_dont_know_why_but_this_image_is_so_pleasing/)
+- Cranberry tart via [Reddit](https://www.reddit.com/r/oddlysatisfying/comments/tvdddr/this_cranberry_tart/?utm_term=1806211071&utm_medium=post_embed&utm_source=embed&utm_name=&utm_content=header)
 - Truck illustration,  MnDOT vehicle classification scheme. Available [here](https://www.dot.state.mn.us/traffic/data/reports/vc/Vehicle_Classification_Scheme.pdf)
 - Rainbow illustration: Oren neu dag, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons
 - Emoji images (Microsoft version) via [Emojipedia](https://emojipedia.org/)
